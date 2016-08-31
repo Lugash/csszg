@@ -1,159 +1,290 @@
+/*****************/
 /* CSS ZENGARDEN */
+/*****************/
+
+/*************/
+/* Lugash    */
+/*************/
+
+/***********/
+/* base    */
+/***********/
 body{
-	background-color: #444;
-	font-family: 'Open sans', Helvetica, arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, arial, sans-serif;
 	color: #fff;
 	font-size: 16px;
 	font-weight: lighter;
+    line-height: 1.5;
 
-    background-image: url("../img/2.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-	background-size: cover;
-/*    filter: blur(5px) brightness(0.5);
-    -webkit-filter: blur(5px) brightness(0.5);*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+
 }
+
 a{
 	text-decoration: none;
 	color: #aaa;
 
-	transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
+	transition: all .15s ease;
+	-o-transition: all .15s ease;
+	-webkit-transition: all .15s ease;
+	-moz-transition: all .15s ease;
+	-ms-transition: all .15s ease;
 }
-a:hover{
+a:hover, a:focus{
 	color: #abe;
-	font-size: 1.1em;
+    text-decoration: underline;
 }
 
 
-/***********/
-/* section */
-/***********/
-#zen-intro{
-	/*min-height: 726px;*/
-	/* rejoindre bas image */
-	width: 80%;
-	padding: 20px;
-	border: 1px solid rgba(0,0,0,0.8);
-	background-color: rgba(0,0,0,0.5);
+
+
+/**********/
+/* header */
+/**********/
+.intro {
+    background: url("../img/new/1.jpg") no-repeat bottom center/cover;
+    background-attachment: fixed;
+
+    padding: 2rem 5%;
 }
-header{
-	width: 115%;
-	padding: 5px;
+header {
+    display: block;
+	padding: 1rem;
 	background-color: #abe;
     opacity: 0.6;
-	box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+
+    transition: 4s ease;
 }
-h1{
-	font-size: 4em;
-	color: rgba(0,0,0,0.8);
-}
-h2{
-	font-size: 3em;
-	text-align: right;
-	color: rgba(0,0,0,0.6);
-	padding: 10px 5px;
-}
-#zen-summary{
-	margin: 10px;
-    margin-bottom: 2em;
-    margin-right: 30%;
+header:hover, header:focus {
+    -moz-transform: scale(1.04);
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform: scale(1.04);
+    -webkit-transform-origin: 50% 50%;
+    -o-transform: scale(1.04);
+    -o-transform-origin: 50% 50%;
+    transform: scale(1.04);
+    transform-origin: 50% 50%;
 
 }
-#zen-preamble{
-	margin: 10px;
+
+header h1 {
+    padding: 3rem;
+    padding-bottom: 0;
+	font-size: 4rem;
+	color: rgba(0,0,0,0.9);
 }
+header h2 {
+    padding: 1rem;
+	font-size: 3rem;
+	text-align: right;
+	color: rgba(0,0,0,0.9);
+}
+
+.summary {
+    font-family: 'Helvetica Neue', sans-serif;
+	width: 50%;
+    font-size: 1.3rem;
+    margin: 2rem auto;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+
+}
+.preamble {
+	width: 75%;
+    margin: 2rem auto;
+    background-color: rgba(0,0,0,.8);
+    padding: 2rem;
+}
+.preamble h3 {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: rgba(255,255,255,.8);
+    border-left: 1px solid rgba(255,255,255,.9);
+    border-top: 1px solid rgba(255,255,255,.9);
+}
+
+
 
 
 /***********/
 /*  main   */
 /***********/
-#zen-supporting{
-	width: 50%;
-	margin: 20px auto;
-	margin-bottom: 50px;
-	padding: 20px;
-	background-color: rgba(0,0,0,0.4);
+.main {
+    background-color: rgba(0, 0, 0, .9);
 }
-#zen-supporting h3{
-	width: 100%;
-	position: relative;
-	left: -50px;
+
+.explanation, .participation, .benefits, .requirements {
+    background: url("../img/new/2.jpg") no-repeat bottom center/cover;
+    padding: 2rem 5%;
+    border-top: 2px solid white;
+
+    transition: .2s ease-in-out;
+    opacity: .9;
+}
+.explanation:hover, .participation:hover, .benefits:hover, .requirements:hover,
+.explanation:focus, .participation:focus, .benefits:focus, .requirements:focus {
+    opacity: 1;
+}
+@media screen and (min-width: 1200px) {
+    .explanation, .participation, .benefits, .requirements {
+        width: 25%;
+        float: left;
+        padding: 1rem;
+        box-sizing: border-box;
+        border-left: 1px solid  rgba(0,0,0,.8);
+        border-right: 1px solid  rgba(0,0,0,.8);
+        border-top: none;
+        min-height: 120rem;
+    }
+}
+
+
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+
+    color:  rgba(255,255,255,.9);
+    display: block;
+    border-right: 1px solid rgba(255,255,255,.9);
+    border-bottom: 1px solid rgba(255,255,255,.9);
+}
+@media screen and (min-width: 1200px) {
+    .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    }
+}
+
+
+.explanation p, .benefits p {
+    width: 50%;
+    margin: 1rem auto;
+    margin-left: 10%;
+}
+.participation p, .requirements p {
+    width: 50%;
+    margin: 1rem auto;
+    margin-right: 10%;
+}
+@media screen and (min-width: 1200px) {
+    .explanation p, .participation p, .benefits p, .requirements p {
+        width: 84%;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .explanation p, .participation p, .benefits p, .requirements p {
+        width: 80%;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+
+.participation {
+    background: url("../img/new/3.jpg") no-repeat bottom center/cover;
+}
+
+.benefits {
+    background: url("../img/new/4.jpg") no-repeat bottom center/cover;
+}
+
+.requirements {
+    background: url("../img/new/5.jpg") no-repeat bottom center/cover;
+}
+
+
+
+
+/***********/
+/*  foot   */
+/***********/
+footer {
+    clear: left;
+    padding: 50%;
+    margin: 0 auto;
+    border-top: 2px solid white;
 	padding: 5px;
-	background-color: #abe;
-	box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
-	font-size: 2.5em;
-	text-align: center;
-	color: rgba(0,0,0,0.5);
-	border-radius: 0px 0px 4px;
-	/*background-image: url('../img/water.jpeg');
-	background-size: 100%;*/
-}
-/*#zen-supporting h3:after {
-  content: "";
-  background: url(../img/water.jpeg);
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-}*/
-#zen-supporting p{
-	margin: 10px 0px;
-
-}
-#zen-supporting h3+p:first-letter{
-	float:left;
-	font-size:2.5em;
-	text-indent:0;
-	margin-right:0.1em;
-	text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
-}
-
-
-
-footer{
-	width: 60%;
-	position: absolute;
-	right: 0px;
-	padding: 5px;
-	background-color: #abe;
+	background-color: rgba(0,0,0,.9);
 	box-shadow: 10px 10px 3px rgba(0,0,0,0.5);
 	font-size: 1.5em;
 	text-align: left;
-	color: rgba(0,0,0,0.5);
 	border-radius: 0px 0px 0px 4px;
 }
-footer:after {
-  content: "";
-  background: url(../img/water.jpeg);
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-/*  attention bug hover*/
+
+
+.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github  {
+    background-image: url("../img/new/1.png");
+    background-repeat: no-repeat;
+    background-size: 65px;
+    background-position: 50% 50%;
+    padding: 25px 25px;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 12%;
+    margin: 1rem 1%;
+    font-size: 0;
+    opacity: .5;
 }
-footer a{
-	color: rgba(0,0,0,0.9);
+.zen-validate-html:hover, .zen-validate-css:hover, .zen-license:hover, .zen-accessibility:hover, .zen-github:hover,
+.zen-validate-html:focus, .zen-validate-css:focus, .zen-license:focus, .zen-accessibility:focus, .zen-github:focus {
+    font-size: 0rem;
+    opacity: .9;
 }
-footer a:hover{
-	color: rgba(0,0,0,0.4);
+
+.zen-validate-css {
+    background-image: url("../img/new/2.png");
+    }
+.zen-license {
+    background-image: url("../img/new/3.png");
 }
+.zen-accessibility {
+    background-image: url("../img/new/4.png");
+}
+.zen-github {
+    background-image: url("../img/new/5.png");
+}
+
+
 
 
 /***********/
 /*  aside  */
 /***********/
-aside{
-	width: 60%;
-	padding: 90px;
-	background-color: rgba(0,0,0,0.7);
+.sidebar {
+    padding: 2rem;
+    padding-right: 12%;
 	text-align: right;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    background: url("../img/new/1.jpg") no-repeat bottom center/cover;
+    background-attachment: fixed;
+    color: rgba(0,0,0,0.9);
+}
+.sidebar h3 {
+    border-left: 1px solid rgba(255,255,255,.9);
+    border-top: 1px solid rgba(255,255,255,.9);
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+
+}
+.sidebar a {
+    color: rgba(0, 0, 0, .7);
+    font-weight: bold;
+}
+.sidebar a:hover, .sidebar a:focus{
+    color: rgba(255,255,255, .8);
+}
+
+.design-selection, .design-archives, .zen-resources {
+    margin: 2rem 0;
+
 }

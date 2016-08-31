@@ -1,0 +1,180 @@
+/* CSS ZENGARDEN */
+body{
+	background-color: #444;
+	font-family: 'Open Sans', Helvetica, arial, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: lighter;
+    line-height: 150%;
+
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+/*    filter: blur(5px) brightness(0.5);
+    -webkit-filter: blur(5px) brightness(0.5);*/
+}
+a{
+	text-decoration: none;
+	color: #aaa;
+
+	transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+}
+a:hover{
+	color: #abe;
+	font-size: 1em;
+    text-decoration: underline;
+}
+
+
+/***********/
+/* section */
+/***********/
+#zen-intro{
+	/*min-height: 726px;*/
+	/* rejoindre bas image */
+	width: 80%;
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.5);
+    padding-bottom: 2em;
+}
+header{
+	width: 115%;
+	padding: 5px;
+	background-color: #abe;
+    opacity: 0.6;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+}
+h1{
+    padding-top: 2rem;
+	font-size: 4em;
+	color: rgba(0,0,0,0.8);
+}
+h2{
+	font-size: 3em;
+	text-align: right;
+	color: rgba(0,0,0,0.6);
+	padding: 10px 5px;
+}
+#zen-summary{
+	margin: 10px;
+    margin-bottom: 2em;
+    margin-right: 30%;
+
+}
+#zen-preamble{
+	margin: 10px;
+}
+
+
+/***********/
+/*  main   */
+/***********/
+#zen-supporting{
+	width: 50%;
+	margin: 20px auto;
+	margin-bottom: 50px;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.4);
+
+
+}
+#zen-supporting h3{
+	width: 100%;
+	position: relative;
+	left: -50px;
+	padding: 5px;
+	background-color: #abe;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+	font-size: 2.5em;
+	text-align: center;
+	color: rgba(0,0,0,0.5);
+	border-radius: 0px 0px 4px;
+	/*background-image: url('../img/water.jpeg');
+	background-size: 100%;*/
+}
+#zen-supporting p{
+    margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+#zen-supporting p:last-child{
+	margin-bottom: 5rem;
+}
+/*#zen-supporting h3:after {
+  content: "";
+  background: url(../img/water.jpeg);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}*/
+
+#zen-supporting h3+p:first-letter{
+	float:left;
+	font-size:2.5em;
+	text-indent:0;
+	margin-right:0.1em;
+	text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+}
+
+
+
+footer{
+	width: 60%;
+	position: absolute;
+	right: 0px;
+	padding: 5px;
+	background-color: #abe;
+	box-shadow: 10px 10px 3px rgba(0,0,0,0.5);
+	font-size: 1.5em;
+	text-align: left;
+	color: rgba(0,0,0,0.5);
+	border-radius: 0px 0px 0px 4px;
+}
+footer:after {
+  content: "";
+  background: url(../img/water.jpeg);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+/*  attention bug hover*/
+}
+footer a{
+    margin: 5px;
+    padding: 2px;
+	color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    border-left: 1px solid rgba(0,0,0,0.9);
+    border-right: 1px solid rgba(0,0,0,0.9);
+}
+footer a:hover{
+	color: rgba(0,0,0,0.4);
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/***********/
+/*  aside  */
+/***********/
+aside{
+	width: 60%;
+	padding: 90px;
+	background-color: rgba(0,0,0,0.7);
+	text-align: right;
+}
+
+.design-selection, .design-archives, .zen-resources {
+    margin: 2em 0;
+}
